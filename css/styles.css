@@ -409,16 +409,12 @@ p {
 .gallery-full {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5%; /* separazione minima */
+  gap: 6px; /* separazione minima */
   width: 100%;
-  margin: 0 auto;
+  margin: 0.5rem;
 }
 
-.gallery-full {
-  width: calc(100% + 48px);
-  margin-left: -24px;
-  margin-right: -24px;
-}
+
 
 
 
