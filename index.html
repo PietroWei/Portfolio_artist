@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeonMuse | AI Artist</title>
-  <meta name="description" content="Portfolio dinamico di un AI Artist: opere, profilo, progetti e contatti." />
+  <title>Giovanni Barbanti | IA Artist</title>
+  <meta name="description" content="Portfolio IA Artist di Giovanni Barbanti" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="index.html">NeonMuse</a>
+    <a class="logo" href="index.html">Giovanni Barbanti | IA Artist</a>
     <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
     <nav id="mainNav" class="main-nav">
       <a href="index.html" class="active">Home</a>
@@ -22,40 +22,64 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content reveal">
-        <p class="eyebrow">AI ARTIST PORTFOLIO</p>
-        <h1>Arte generativa tra luce, codice e immaginazione</h1>
-        <p>
-          Esplora una collezione di opere create con modelli generativi, prompt design
-          e post-produzione creativa.
-        </p>
-        <a class="btn" href="progetti.html">Scopri i progetti</a>
-      </div>
-      <figure class="hero-media reveal">
-        <img src="assets/hero.jpg" alt="Paesaggio cinematico di montagna con acqua e luce drammatica" loading="eager">
-      </figure>
-      <div class="hero-glow" aria-hidden="true"></div>
+  <main class="page">
+    <section class="section reveal compact-head">
+      <h1>Progetti in evidenza</h1>
+      <p>Tre serie, due immagini per ogni progetto in formato 16:9.</p>
+    </section>
+
+    <section class="section reveal project-pairs">
+      <article class="pair-block">
+        <h2>Nocturne Cities</h2>
+        <div class="pair-grid">
+          <a class="ratio-card" href="progetto-nocturne.html">
+            <img src="assets/progetto-1.jpg" alt="Nocturne Cities scena 1" loading="lazy">
+            <span class="overlay-title">Nocturne Cities</span>
+          </a>
+          <a class="ratio-card" href="progetto-nocturne.html">
+            <img src="assets/bg.jpg" alt="Nocturne Cities scena 2" loading="lazy">
+            <span class="overlay-title">Nocturne Cities</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="pair-block">
+        <h2>Organic Synth</h2>
+        <div class="pair-grid">
+          <a class="ratio-card" href="progetto-organic.html">
+            <img src="assets/progetto-2.jpg" alt="Organic Synth scena 1" loading="lazy">
+            <span class="overlay-title">Organic Synth</span>
+          </a>
+          <a class="ratio-card" href="progetto-organic.html">
+            <img src="assets/profilo.jpg" alt="Organic Synth scena 2" loading="lazy">
+            <span class="overlay-title">Organic Synth</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="pair-block">
+        <h2>Forgotten Frames</h2>
+        <div class="pair-grid">
+          <a class="ratio-card" href="progetto-forgotten.html">
+            <img src="assets/hero.jpg" alt="Forgotten Frames scena 1" loading="lazy">
+            <span class="overlay-title">Forgotten Frames</span>
+          </a>
+          <a class="ratio-card" href="progetto-forgotten.html">
+            <img src="assets/contatti.jpg" alt="Forgotten Frames scena 2" loading="lazy">
+            <span class="overlay-title">Forgotten Frames</span>
+          </a>
+        </div>
+      </article>
     </section>
 
     <section class="section reveal">
       <div class="section-head">
-        <h2>Gallery in evidenza</h2>
-        <p>10 immagini selezionate dal mio universo visuale.</p>
-      </div>
-      <div class="gallery" id="galleryGrid"></div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-head">
-        <h2>Showreel</h2>
-        <p>Un breve video che racconta processo e stile.</p>
+        <h2>Video</h2>
       </div>
       <div class="video-wrap">
         <iframe
           src="https://www.youtube.com/embed/9No-FiEInLA"
-          title="AI Art Showreel"
+          title="IA Art Showreel"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
@@ -64,7 +88,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> NeonMuse AI Artist</p>
+    <p>© <span id="year"></span> Giovanni Barbanti IA Artist</p>
   </footer>
 
   <script src="js/main.js"></script>
