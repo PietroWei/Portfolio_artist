@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profilo | NeonMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">NeonMuse</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="profilo.html" class="active">Profilo</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section reveal">
+      <p class="eyebrow">CHI SONO</p>
+      <h1>Profilo artistico</h1>
+      <p>
+        Sono un AI Artist specializzato in immagini cinematiche e atmosfere futuristiche.
+        Unisco prompt engineering, compositing e color grading per creare opere narrative.
+      </p>
+      <figure class="page-cover">
+        <img src="assets/profilo.jpg" alt="Ritratto in stile creativo usato come immagine profilo" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="section split reveal">
+      <article class="card">
+        <h2>Competenze</h2>
+        <ul>
+          <li>Generative imaging (diffusion models)</li>
+          <li>Direction e moodboard visuale</li>
+          <li>Post-produzione e ritocco</li>
+          <li>Design per campagne digitali</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2>Visione</h2>
+        <p>
+          Creo mondi visivi che sembrano fotogrammi di film mai girati: oscuri,
+          eleganti e immersivi, con un focus su luce, texture e storytelling.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NeonMuse AI Artist</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

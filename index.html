@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonMuse | AI Artist</title>
+  <meta name="description" content="Portfolio dinamico di un AI Artist: opere, profilo, progetti e contatti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">NeonMuse</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="profilo.html">Profilo</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">AI ARTIST PORTFOLIO</p>
+        <h1>Arte generativa tra luce, codice e immaginazione</h1>
+        <p>
+          Esplora una collezione di opere create con modelli generativi, prompt design
+          e post-produzione creativa.
+        </p>
+        <a class="btn" href="progetti.html">Scopri i progetti</a>
+      </div>
+      <figure class="hero-media reveal">
+        <img src="assets/hero.jpg" alt="Paesaggio cinematico di montagna con acqua e luce drammatica" loading="eager">
+      </figure>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>Gallery in evidenza</h2>
+        <p>10 immagini selezionate dal mio universo visuale.</p>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-head">
+        <h2>Showreel</h2>
+        <p>Un breve video che racconta processo e stile.</p>
+      </div>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/9No-FiEInLA"
+          title="AI Art Showreel"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NeonMuse AI Artist</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

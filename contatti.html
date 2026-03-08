@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti | NeonMuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">NeonMuse</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="profilo.html">Profilo</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="contatti.html" class="active">Contatti</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section reveal">
+      <p class="eyebrow">LET'S BUILD</p>
+      <h1>Contatti</h1>
+      <p>Parlami del tuo progetto creativo e ti risponderò entro 48h.</p>
+      <figure class="page-cover">
+        <img src="assets/contatti.jpg" alt="Immagine d'atmosfera per la sezione contatti" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="section reveal">
+      <form class="contact-form" action="https://formspree.io/f/xvgrrwjb" method="POST">
+        <label>Nome
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Messaggio
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button class="btn" type="submit">Invia richiesta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NeonMuse AI Artist</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
