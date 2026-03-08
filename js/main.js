@@ -29,3 +29,14 @@ function setYear() {
 mobileNav();
 revealOnScroll();
 setYear();
+
+
+// Shrink header on scroll
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header");
+  if (window.scrollY > 20) {
+    header.classList.add("shrink");
+  } else {
+    header.classList.remove("shrink");
+  }
+});

@@ -1,12 +1,12 @@
 ﻿:root {
-  --bg: #101215;
-  --surface: #191c21;
-  --surface-2: #22262d;
-  --text: #f2f4f7;
-  --muted: #a9b0bc;
-  --line: #2f3540;
-  --accent: #6ea8ff;
-  --shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  --bg: #0b0b0c;          /* nero molto scuro, quasi profondo */
+  --surface: #161718;     /* grigio scurissimo per header e card */
+  --surface-2: #1f2022;   /* grigio leggermente più chiaro */
+  --text: #ffffff;        /* bianco pieno */
+  --muted: #c7c7c7;       /* grigio chiaro per testi secondari */
+  --line: #2a2b2d;        /* linea grigio scuro */
+  --accent: #6ea8ff;      /* blu acceso, funziona bene sul dark */
+  --shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -37,16 +37,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
+  padding: 40px 24px;
+  font-size: 1.1rem;
 }
 
 .logo {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400; /* Regular */
   text-decoration: none;
   color: var(--text);
-  letter-spacing: 0.04em;
-  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  font-size: 2.5rem;
 }
+
+
 
 .main-nav {
   display: flex;
@@ -81,7 +85,7 @@ main {
 .page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 18px 24px 40px;
+  padding: 18px 4px 40px;
 }
 
 .section {
@@ -92,7 +96,7 @@ main {
 
 .compact-head h1 {
   margin-bottom: 8px;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(1.5rem, 2.8vw, 2.2rem);
 }
 
@@ -360,5 +364,109 @@ p {
 
   .logo {
     font-size: 0.78rem;
+  }
+}
+
+/* HEADER GRANDE (stato iniziale) */
+.site-header {
+  padding: 48px 24px; /* più alto */
+  transition: padding 0.25s ease, background 0.25s ease;
+}
+.site-header {
+  font-family: "Manrope", sans-serif;
+}
+/* LOGO grande */
+.logo {
+  font-size: 4.0rem;
+  transition: font-size 0.25s ease;
+}
+
+/* NAV grande */
+.main-nav a {
+  font-size: 1rem;
+  transition: font-size 0.25s ease;
+}
+
+/* HEADER RIDOTTO (quando scrolli) */
+.site-header.shrink {
+  padding: 12px 24px;
+  background: rgba(25, 28, 33, 0.85); /* leggero effetto glass */
+  backdrop-filter: blur(6px);
+}
+
+/* LOGO piccolo */
+.site-header.shrink .logo {
+  font-size: 1rem;
+}
+
+/* NAV piccolo */
+.site-header.shrink .main-nav a {
+  font-size: 0.85rem;
+}
+
+
+/* Galleria full-width */
+.gallery-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5%; /* separazione minima */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-full {
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+
+
+/* Card full width */
+.full-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0; /* niente angoli */
+}
+
+.full-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  transition: transform 0.35s ease;
+}
+
+/* Hover zoom */
+.full-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Overlay title */
+.full-card .overlay-title {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.full-card:hover .overlay-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile: una colonna */
+@media (max-width: 760px) {
+  .gallery-full {
+    grid-template-columns: 1fr;
+    gap: 1%;
   }
 }
