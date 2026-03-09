@@ -1,4 +1,4 @@
-﻿function revealOnScroll() {
+﻿﻿function revealOnScroll() {
   const targets = document.querySelectorAll(".reveal");
   if (!targets.length) return;
 
@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
     window.requestAnimationFrame(() => {
       const header = document.querySelector(".site-header");
 
-      if (lastScroll > 40) {  // soglia leggermente più alta = meno oscillazioni
+      if (lastScroll > 80) {  // Aumentata la soglia per prevenire il "rimbalzo"
         header.classList.add("shrink");
       } else {
         header.classList.remove("shrink");
@@ -55,6 +55,3 @@ window.addEventListener("scroll", () => {
     ticking = true;
   }
 });
-
-
-

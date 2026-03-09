@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | AI Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">AI Artist</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="progetti.html">Progetti</a>
+      <a href="profilo.html">Profilo</a>
+      <a href="contatti.html" class="active">Contatti</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">☰</button>
+  </header>
+
+  <main>
+    <div class="page">
+      <header class="compact-head reveal">
+        <h1>Contatti</h1>
+        <p>Parliamo del tuo prossimo progetto o di una possibile collaborazione.</p>
+      </header>
+
+      <section class="section reveal">
+        <div class="split">
+          <div class="card">
+            <h2>Mettiamoci in contatto</h2>
+            <p>
+              Sono sempre aperto a nuove opportunità, commissioni o semplicemente a una chiacchierata sull'arte e la tecnologia. Compila il form qui a fianco o trovami sui social.
+            </p>
+            <h3 style="margin-top: 30px;">Seguimi</h3>
+            <p>
+              Per aggiornamenti costanti sui miei ultimi lavori e dietro le quinte, il posto migliore è Instagram.
+            </p>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 10px;">
+              Vai a Instagram
+            </a>
+          </div>
+          <div>
+            <!-- Per un sito statico, il form non invierà email. Usa un servizio come Formspree o Netlify Forms per abilitarlo. -->
+            <form action="#" method="POST" class="contact-form">
+              <label> Nome <input type="text" name="name" required> </label>
+              <label> Email <input type="email" name="email" required> </label>
+              <label> Messaggio <textarea name="message" rows="5" required></textarea> </label>
+              <button type="submit" class="btn">Invia Messaggio</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> AI Artist. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
