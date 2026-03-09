@@ -370,7 +370,7 @@ p {
 /* HEADER GRANDE (stato iniziale) */
 .site-header {
   padding: 48px 24px; /* più alto */
-  transition: padding 0.25s ease, background 0.25s ease;
+  /*transition: padding 0.25s ease, background 0.25s ease; */
 }
 .site-header {
   font-family: "Manrope", sans-serif;

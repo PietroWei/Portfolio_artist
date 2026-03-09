@@ -32,11 +32,29 @@ setYear();
 
 
 // Shrink header on scroll
-window.addEventListener("scroll", function () {
-  const header = document.querySelector(".site-header");
-  if (window.scrollY > 20) {
-    header.classList.add("shrink");
-  } else {
-    header.classList.remove("shrink");
+
+let lastScroll = 0;
+let ticking = false;
+
+window.addEventListener("scroll", () => {
+  lastScroll = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const header = document.querySelector(".site-header");
+
+      if (lastScroll > 40) {  // soglia leggermente più alta = meno oscillazioni
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+
+      ticking = false;
+    });
+
+    ticking = true;
   }
 });
+
+
+
