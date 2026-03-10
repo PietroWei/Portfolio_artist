@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿/* RESET & VARIABILI */
+﻿﻿﻿﻿﻿﻿﻿﻿/* RESET & VARIABILI */
 :root {
   --bg: #0b0b0c;
   --surface: #161718;
@@ -20,11 +20,14 @@ html, body {
   background-color: #0b0b0c !important; /* Priorità assoluta al nero */
   color: #ffffff !important;            /* Priorità assoluta al bianco */
   min-height: 100%;
+  -webkit-text-size-adjust: 100%;       /* Evita zoom testo indesiderato su iOS */
+  -webkit-font-smoothing: antialiased;  /* Rendering font più nitido su Safari/Mac */
 }
 
 img {
   max-width: 100%;
   display: block;
+  height: auto; /* Assicura proporzioni corrette se aspect-ratio fallisce */
 }
 
 /* HEADER STABILE (Niente transizioni) */
@@ -40,6 +43,7 @@ img {
   justify-content: space-between;
   padding: 48px 24px;
   transition: padding 0.3s ease; /* Riattivata transizione fluida */
+  will-change: padding; /* Ottimizzazione per Safari */
 }
 
 .site-header.shrink {
@@ -54,6 +58,7 @@ img {
   letter-spacing: 0.02em;
   font-size: 4.0rem;
   transition: font-size 0.3s ease; /* Riattivata transizione logo */
+  will-change: font-size; /* Ottimizzazione per Safari */
 }
 
 .site-header.shrink .logo {
@@ -264,6 +269,7 @@ p { color: var(--muted); }
   color: #fff;
   padding: 10px 12px;
   font: inherit;
+  -webkit-appearance: none; /* Rimuove stile default iOS (bordi arrotondati/ombre) */
 }
 .btn {
   display: inline-block;
@@ -289,6 +295,7 @@ p { color: var(--muted); }
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: opacity, transform; /* Previene flickering durante lo scroll su Safari */
 }
 .reveal.visible {
   opacity: 1;

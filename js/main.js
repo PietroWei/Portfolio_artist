@@ -1,4 +1,4 @@
-﻿﻿function revealOnScroll() {
+﻿﻿﻿﻿function revealOnScroll() {
   const targets = document.querySelectorAll(".reveal");
   if (!targets.length) return;
 
@@ -42,7 +42,7 @@ sentinel.style.left = "0";
 sentinel.style.width = "100%";
 sentinel.style.height = "1px"; // Soglia minima: appena scrolli (1px), si rimpicciolisce.
 sentinel.style.pointerEvents = "none";
-sentinel.style.visibility = "hidden";
+sentinel.style.opacity = "0"; // Più compatibile di visibility: hidden per gli Observer su Safari
 document.body.prepend(sentinel);
 
 const headerObserver = new IntersectionObserver((entries) => {
