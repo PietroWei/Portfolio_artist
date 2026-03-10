@@ -1,82 +1,96 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Progetti | Giovanni Barbanti ∙ AI Artist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetti | AI Artist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+
   <header class="site-header">
-    <a class="logo" href="index.html">Giovanni Barbanti ∙ AI Artist</a>
-    <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
-    <nav id="mainNav" class="main-nav">
+    <a href="index.html" class="logo">AI Artist</a>
+    <nav class="main-nav" id="mainNav">
       <a href="index.html">Home</a>
-      <a href="profilo.html">Profilo</a>
       <a href="progetti.html" class="active">Progetti</a>
+      <a href="profilo.html">Profilo</a>
       <a href="contatti.html">Contatti</a>
     </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">☰</button>
   </header>
 
-  <main class="page">
-    <section class="section reveal compact-head">
-      <h1>Archivio Progetti</h1>
-      <p>6 immagini in composizione editoriale con titolo e mini descrizione.</p>
-    </section>
+  <main>
+    <div class="page">
+      <header class="compact-head reveal">
+        <h1>I Miei Progetti</h1>
+        <p>Una selezione di opere generate attraverso l'esplorazione di intelligenza artificiale, algoritmi e creatività umana.</p>
+      </header>
 
-    <section class="section reveal project-list">
-      <article class="project-row">
-        <img src="assets/progetto-1.jpg" alt="Nocturne Cities frame A" loading="lazy">
-        <div>
-          <h2>Nocturne Cities A</h2>
-          <p>Skyline notturno con volumi luminosi e atmosfera urbana.</p>
+      <section class="section reveal">
+        <div class="project-list">
+          <!-- Progetto 1 -->
+          <a href="progetto-1.html" class="project-row">
+            <img src="https://images.unsplash.com/photo-1679033292444-634125345359?q=80&w=1280&auto=format&fit=crop" alt="Copertina Progetto 1">
+            <div>
+              <h2>Cosmic Dreams</h2>
+              <p>Un viaggio visivo attraverso nebulose generate dall'IA, dove colore e forma si fondono in paesaggi cosmici surreali.</p>
+            </div>
+          </a>
+          <!-- Progetto 2 -->
+          <a href="progetto-nocturne.html" class="project-row reverse">
+            <img src="assets/1b.png" alt="Copertina Progetto Nocturne Cities">
+            <div>
+              <h2>Nocturne Cities</h2>
+              <p>Esplorazione di paesaggi urbani notturni, immersi in una luce al neon che ridefinisce l'architettura e l'atmosfera metropolitana.</p>
+            </div>
+          </a>
+          <!-- Progetto 3 -->
+          <a href="progetto-organic.html" class="project-row">
+            <img src="assets/2a.png" alt="Copertina Progetto Organic Synth">
+            <div>
+              <h2>Organic Synth</h2>
+              <p>La natura reinterpretata attraverso forme astratte e pattern generativi, dove l'organico e il sintetico si fondono.</p>
+            </div>
+          </a>
+          <!-- Progetto 4 -->
+          <a href="progetto-forgotten.html" class="project-row reverse">
+            <img src="assets/3a.png" alt="Copertina Progetto Forgotten Frames">
+            <div>
+              <h2>Forgotten Frames</h2>
+              <p>Fotogrammi perduti e ritrovati, scene malinconiche generate dall'IA che evocano ricordi di un passato mai esistito.</p>
+            </div>
+          </a>
+          <!-- Progetto 5 -->
+          <a href="progetto-5.html" class="project-row">
+            <img src="https://images.unsplash.com/photo-1671734493832-109048444b9a?q=80&w=1280&auto=format&fit=crop" alt="Copertina Progetto 5">
+            <div>
+              <h2>Future Landscapes</h2>
+              <p>Visioni di paesaggi futuri, dove elementi naturali e strutture fantastiche coesistono in armonie impossibili.</p>
+            </div>
+          </a>
+          <!-- Progetto 6 -->
+          <a href="progetto-6.html" class="project-row reverse">
+            <img src="https://images.unsplash.com/photo-1666825866239-404a3a3a50af?q=80&w=1280&auto=format&fit=crop" alt="Copertina Progetto 6">
+            <div>
+              <h2>Mechanical Fauna</h2>
+              <p>Una collezione di creature biomeccaniche, la cui anatomia è un ibrido tra il mondo animale e l'ingegneria complessa.</p>
+            </div>
+          </a>
         </div>
-      </article>
-      <article class="project-row reverse">
-        <img src="assets/bg.jpg" alt="Nocturne Cities frame B" loading="lazy">
-        <div>
-          <h2>Nocturne Cities B</h2>
-          <p>Composizione geometrica con contrasti netti e visuale profonda.</p>
-        </div>
-      </article>
-      <article class="project-row">
-        <img src="assets/progetto-2.jpg" alt="Organic Synth frame A" loading="lazy">
-        <div>
-          <h2>Organic Synth A</h2>
-          <p>Superfici ibride tra materia organica e forme sintetiche.</p>
-        </div>
-      </article>
-      <article class="project-row reverse">
-        <img src="assets/profilo.jpg" alt="Organic Synth frame B" loading="lazy">
-        <div>
-          <h2>Organic Synth B</h2>
-          <p>Ritratto sperimentale con luce controllata e texture fluide.</p>
-        </div>
-      </article>
-      <article class="project-row">
-        <img src="assets/hero.jpg" alt="Forgotten Frames frame A" loading="lazy">
-        <div>
-          <h2>Forgotten Frames A</h2>
-          <p>Frame cinematico ispirato a scenari rétro-futuri.</p>
-        </div>
-      </article>
-      <article class="project-row reverse">
-        <img src="assets/contatti.jpg" alt="Forgotten Frames frame B" loading="lazy">
-        <div>
-          <h2>Forgotten Frames B</h2>
-          <p>Taglio narrativo minimale con focus su atmosfera e distanza.</p>
-        </div>
-      </article>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Giovanni Barbanti ∙ AI Artist</p>
+    <p>&copy; <span id="year"></span> AI Artist. Tutti i diritti riservati.</p>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

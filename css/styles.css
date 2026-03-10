@@ -40,7 +40,6 @@ img {
   justify-content: space-between;
   padding: 48px 24px;
   font-size: 1.1rem;
-  transition: padding 0.25s ease, background-color 0.25s ease;
 }
 
 .logo {
@@ -49,20 +48,18 @@ img {
   text-decoration: none;
   color: var(--text);
   letter-spacing: 0.02em;
-  font-size: 2.5rem;
+  font-size: 4.0rem;
 }
-
-
 
 .main-nav {
   display: flex;
   gap: 18px;
 }
-
 .main-nav a {
   color: var(--muted);
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .main-nav a:hover,
@@ -377,16 +374,6 @@ p {
   }
 }
 
-/* LOGO grande */
-.logo {
-  font-size: 4.0rem;
-  transition: font-size 0.25s ease;
-}
-/* NAV grande */
-.main-nav a {
-  font-size: 1rem;
-  transition: font-size 0.25s ease;
-}
 /* HEADER RIDOTTO (quando scrolli) */
 .site-header.shrink {
   padding: 12px 24px;
@@ -409,14 +396,9 @@ p {
 .gallery-full {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px; /* separazione minima */
-  width: 100%;
-  margin: 0.5rem;
+  gap: 6px;
+  padding: 6px;
 }
-
-
-
-
 
 /* Card full width */
 .full-card {
