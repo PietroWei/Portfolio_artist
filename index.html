@@ -1,80 +1,84 @@
-﻿﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giovanni Barbanti ∙ AI Artist</title>
-  <meta name="description" content="Portfolio AI Artist di Giovanni Barbanti" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=5" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=8">
 </head>
-<body>
-  <header class="site-header">
-    <a class="logo" href="index.html">Giovanni Barbanti ∙ AI Artist</a>
-    <button id="menuToggle" class="menu-toggle" aria-label="Apri menu">☰</button>
-    <nav id="mainNav" class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="profilo.html">Profilo</a>
-      <a href="progetti.html">Progetti</a>
-      <a href="contatti.html">Contatti</a>
-      <a href="index-en.html" class="lang-btn" title="Switch to English">🇬🇧</a>
-    </nav>
-  </header>
+<body class="landing-body">
 
-  <main>
+  <!-- Sfondo Scorrimento Infinito -->
+  <div class="scrolling-gallery">
+    <!-- Colonna 1 (Sale) -->
+    <div class="scroll-col scroll-up">
+      <img src="assets/1a.png" alt="">
+      <img src="assets/1b.png" alt="">
+      <img src="assets/2a.png" alt="">
+      <img src="assets/2b.png" alt="">
+      <img src="assets/10a.png" alt="">
+      <img src="assets/12b.png" alt="">
+      <!-- Duplicati per loop -->
+      <img src="assets/1a.png" alt="">
+      <img src="assets/1b.png" alt="">
+      <img src="assets/2a.png" alt="">
+      <img src="assets/2b.png" alt="">
+      <img src="assets/10a.png" alt="">
+      <img src="assets/12b.png" alt="">
 
-    <section class="gallery-full">
-      <a class="full-card" href="progetto-nocturne.html">
-        <img src="assets/1a.png" alt="Un eterno tramonto">
-        <span class="overlay-title">Un eterno tramonto</span>
-      </a>
-    
-      <a class="full-card" href="progetto-nocturne.html">
-        <img src="assets/1b.png" alt="Nocturne Cities">
-        <span class="overlay-title">Nocturne Cities</span>
-      </a>
-    
-      <a class="full-card" href="progetto-organic.html">
-        <img src="assets/2a.png" alt="Organic Synth">
-        <span class="overlay-title">Organic Synth</span>
-      </a>
-    
-      <a class="full-card" href="progetto-organic.html">
-        <img src="assets/2b.png" alt="Organic Synth">
-        <span class="overlay-title">Organic Synth</span>
-      </a>
-    
-      <a class="full-card" href="progetto-forgotten.html">
-        <img src="assets/3a.png" alt="Forgotten Frames">
-        <span class="overlay-title">Forgotten Frames</span>
-      </a>
-    
-      <a class="full-card" href="progetto-forgotten.html">
-        <img src="assets/3b.png" alt="Forgotten Frames">
-        <span class="overlay-title">Forgotten Frames</span>
-      </a>
-    </section>
-
-    <div class="page">
-      <section class="section reveal">
-        <div class="section-head">
-          <h2>Video</h2>
-        </div>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/0vnNnM3RIIk" title="Pregiudizio II" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </section>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Giovanni Barbanti ∙ AI Artist</p>
-  </footer>
+    <!-- Colonna 2 (Scende) -->
+    <div class="scroll-col scroll-down">
+      <img src="assets/3a.png" alt="">
+      <img src="assets/3b.png" alt="">
+      <img src="assets/4a.png" alt="">
+      <img src="assets/4b.png" alt="">
+      <img src="assets/9a.png" alt="">
+      <img src="assets/9b.png" alt="">
+      <!-- Duplicati per loop -->
+      <img src="assets/3a.png" alt="">
+      <img src="assets/3b.png" alt="">
+      <img src="assets/4a.png" alt="">
+      <img src="assets/4b.png" alt="">
+      <img src="assets/9a.png" alt="">
+      <img src="assets/9b.png" alt="">
+    </div>
 
-  <script src="js/main.js"></script>
+    <!-- Colonna 3 (Sale) -->
+    <div class="scroll-col scroll-up mobile-hidden">
+      <img src="assets/5a.png" alt="">
+      <img src="assets/5b.png" alt="">
+      <img src="assets/6a.png" alt="">
+      <img src="assets/6b.png" alt="">
+      <img src="assets/7a.png" alt="">
+      <img src="assets/8b.png" alt="">
+      <!-- Duplicati per loop -->
+      <img src="assets/5a.png" alt="">
+      <img src="assets/5b.png" alt="">
+      <img src="assets/6a.png" alt="">
+      <img src="assets/6b.png" alt="">
+      <img src="assets/7a.png" alt="">
+      <img src="assets/7a.png" alt="">
+      <img src="assets/8b.png" alt="">
+    </div>
+  </div>
+
+  <!-- Overlay Scuro -->
+  <div class="landing-overlay"></div>
+
+  <!-- Contenuto Centrale -->
+  <div class="landing-content">
+    <h1 class="landing-title">Giovanni Barbanti</h1>
+    <h2 class="landing-subtitle">AI Artist</h2>
+    
+    <div class="landing-buttons">
+      <a href="home.html" class="btn-enter">Enter Portfolio</a>
+    </div>
+  </div>
+
 </body>
 </html>
