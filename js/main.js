@@ -31,27 +31,32 @@ revealOnScroll();
 setYear();
 
 
-// Shrink header on scroll
+// HEADER FIX: Metodo "Sentinel" (più robusto dello scrollY)
+// Creiamo un elemento invisibile in cima alla pagina.
+// Quando questo elemento esce dallo schermo, rimpiccioliamo l'header.
 
-let lastScroll = 0;
-let ticking = false;
+const sentinel = document.createElement("div");
+sentinel.style.position = "absolute";
+sentinel.style.top = "0";
+sentinel.style.left = "0";
+sentinel.style.width = "100%";
+sentinel.style.height = "1px"; // Soglia minima: appena scrolli (1px), si rimpicciolisce.
+sentinel.style.pointerEvents = "none";
+sentinel.style.visibility = "hidden";
+document.body.prepend(sentinel);
 
-window.addEventListener("scroll", () => {
-  lastScroll = window.scrollY;
+const headerObserver = new IntersectionObserver((entries) => {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+  
+  // Se la sentinella NON è visibile (isIntersecting = false), significa che abbiamo scrollato giù.
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+  });
+}, { threshold: 0 });
 
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      const header = document.querySelector(".site-header");
-
-      if (lastScroll > 80) {  // Aumentata la soglia per prevenire il "rimbalzo"
-        header.classList.add("shrink");
-      } else {
-        header.classList.remove("shrink");
-      }
-
-      ticking = false;
-    });
-
-    ticking = true;
-  }
-});
+headerObserver.observe(sentinel);
