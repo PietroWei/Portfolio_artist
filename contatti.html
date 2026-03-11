@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatti | AI Artist</title>
+  <title>Contatti | Giovanni Barbanti ∙ AI Artist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,13 +14,13 @@
 <body>
 
   <header class="site-header">
-    <a href="index.html" class="logo">AI Artist</a>
+    <a href="home.html" class="logo">Giovanni Barbanti ∙ AI Artist</a>
     <nav class="main-nav" id="mainNav">
-      <a href="index.html">Home</a>
+      <a href="home.html">Home</a>
       <a href="progetti.html">Progetti</a>
       <a href="profilo.html">Profilo</a>
       <a href="contatti.html" class="active">Contatti</a>
-      <a href="contatti-en.html" class="lang-btn" title="Switch to English">🇬🇧</a>
+      <a href="contatti-en.html" class="lang-btn" title="Switch to English">🇪🇳</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="Apri menu">☰</button>
   </header>
@@ -35,6 +35,7 @@
       <section class="section reveal">
         <div class="split">
           <div class="card">
+            <img src="assets/1b.png" alt="Atmosfera notturna" class="contact-visual">
             <h2>Mettiamoci in contatto</h2>
             <p>
               Sono sempre aperto a nuove opportunità, commissioni o semplicemente a una chiacchierata sull'arte e la tecnologia. Compila il form qui a fianco o trovami sui social.
@@ -43,13 +44,14 @@
             <p>
               Per aggiornamenti costanti sui miei ultimi lavori e dietro le quinte, il posto migliore è Instagram.
             </p>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 10px;">
-              Vai a Instagram
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 15px; text-decoration: none; color: var(--text);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C14.717 2 15.056 2.01 16.122 2.06C19.988 2.23 21.765 4.01 21.94 7.878C21.99 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.765 19.988 19.988 21.765 16.122 21.94C15.056 21.99 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C4.01 21.765 2.23 19.988 2.06 16.122C2.01 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.23 4.01 4.01 2.23 7.878 2.06C8.944 2.01 9.283 2 12 2ZM12 7C9.239 7 7 9.239 7 12C7 14.761 9.239 17 12 17C14.761 17 17 14.761 17 12C17 9.239 14.761 7 12 7ZM17.25 5.5C17.25 6.19 17.81 6.75 18.5 6.75C19.19 6.75 19.75 6.19 19.75 5.5C19.75 4.81 19.19 4.25 18.5 4.25C17.81 4.25 17.25 4.81 17.25 5.5ZM12 15.2C10.233 15.2 8.8 13.767 8.8 12C8.8 10.233 10.233 8.8 12 8.8C13.767 8.8 15.2 10.233 15.2 12C15.2 13.767 13.767 15.2 12 15.2Z" fill="white"/></svg>
+              <span style="font-size: 1.1rem; font-weight: 600;">Giovanni Barbanti</span>
             </a>
           </div>
           <div>
-            <!-- Per un sito statico, il form non invierà email. Usa un servizio come Formspree o Netlify Forms per abilitarlo. -->
-            <form action="#" method="POST" class="contact-form">
+            <!-- Istruzioni: Registrati su formspree.io, crea un nuovo form e incolla il tuo endpoint qui sotto al posto di 'IL_TUO_CODICE' -->
+            <form action="https://formspree.io/f/mzdjreoy" method="POST" class="contact-form">
               <label> Nome <input type="text" name="name" required> </label>
               <label> Email <input type="email" name="email" required> </label>
               <label> Messaggio <textarea name="message" rows="5" required></textarea> </label>
@@ -62,7 +64,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> AI Artist. Tutti i diritti riservati.</p>
+    <p>
+      © <span id="year"></span> Giovanni Barbanti ∙ AI Artist
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+    </p>
   </footer>
 
   <script src="js/main.js"></script>
